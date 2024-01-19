@@ -62,6 +62,7 @@ const modals = () => {
       if (!display) {
         document.querySelector(selector).style.display = 'block';
         document.body.style.overflow = "hidden";
+        document.body.style.marginRight = `${scroll}px`;
       }
     }, time);
   }
@@ -78,7 +79,7 @@ const modals = () => {
   }
   bindModal('.button-design', '.popup-design', '.popup-design .popup-close');
   bindModal('.button-consultation', '.popup-consultation', '.popup-consultation .popup-close');
-  showModalByTime('.popup-consultation', 3000);
+  // showModalByTime('.popup-consultation', 60000);
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (modals);
 
